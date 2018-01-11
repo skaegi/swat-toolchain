@@ -1,6 +1,9 @@
 version: '2'
 toolchain:
-  name: swat
+  name: swat-{{timestamp}}
+template:
+  name: swat template
+  description: swat template description ftw
 services:  
   webide:
     service_id: orion
