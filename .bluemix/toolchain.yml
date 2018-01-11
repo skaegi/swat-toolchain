@@ -15,3 +15,10 @@ services:
       type: clone
       has_issues: true
       enable_traceability: true    
+  sample-build:
+    service_id: pipeline
+    parameters:
+      services:
+        - sample-repo
+      name: '{{services.sample-repo.parameters.repo_name}}'
+      ui-pipeline: true
